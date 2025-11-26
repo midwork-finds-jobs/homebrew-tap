@@ -30,7 +30,7 @@ brew install midwork-finds-jobs/tap/hrobot
 ## Available Formulas
 
 - **hq** (v0.5.1) - Command-line HTML filter using CSS selectors
-- **hrobot** (v0.2.0) - Terraform provider for Hetzner Robot API
+- **hrobot** (v0.3.1) - Terraform provider for Hetzner Robot API
 
 ## Development
 
