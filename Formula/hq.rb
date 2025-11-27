@@ -25,7 +25,19 @@ class Hq < Formula
   end
 
   def install
-    bin.install "hq"
+    if OS.mac?
+      if Hardware::CPU.arm?
+        bin.install "hq-macos-aarch64" => "hq"
+      else
+        bin.install "hq-macos-x86_64" => "hq"
+      end
+    else
+      if Hardware::CPU.arm?
+        bin.install "hq-linux-aarch64" => "hq"
+      else
+        bin.install "hq-linux-x86_64" => "hq"
+      end
+    end
   end
 
   test do
