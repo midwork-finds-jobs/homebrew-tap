@@ -1,26 +1,26 @@
 class Hrobot < Formula
-  desc "Terraform provider for Hetzner Robot API"
+  desc "CLI for Hetzner Robot API - manage dedicated servers, firewall, SSH keys"
   homepage "https://github.com/midwork-finds-jobs/terraform-provider-hrobot"
-  version "0.3.1"
-  license "MIT"
+  version "0.5.0"
+  license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/midwork-finds-jobs/terraform-provider-hrobot/releases/download/v0.3.1/hrobot-darwin-arm64.tar.gz"
-      sha256 "b96e2d6f278a2ec86aca46f1526f1c32a9232784a96cfcaebfd1fa8b14812964"
+      url "https://github.com/midwork-finds-jobs/terraform-provider-hrobot/releases/download/v0.5.0/hrobot-darwin-arm64.tar.gz"
+      sha256 "5d6fc9c5db6e73ff583ebf16b96e4fef6eb3509881aeb1a622ac73cbd8c089f5"
     else
-      url "https://github.com/midwork-finds-jobs/terraform-provider-hrobot/releases/download/v0.3.1/hrobot-darwin-amd64.tar.gz"
-      sha256 "ea14e4d0ed21732041f7fa2c1db337e276541793602f6110c3643760539e4ede"
+      url "https://github.com/midwork-finds-jobs/terraform-provider-hrobot/releases/download/v0.5.0/hrobot-darwin-amd64.tar.gz"
+      sha256 "196c5bbb2bb3896dd20f416d95b122a0b3af04586898bc8e72f1ebdc1f1be9ef"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/midwork-finds-jobs/terraform-provider-hrobot/releases/download/v0.3.1/hrobot-linux-arm64.tar.gz"
-      sha256 "df879d4b6870131dd25d3dc3bb85508ddd9a238e0b467d4b87ee9e6b8bc450ed"
+      url "https://github.com/midwork-finds-jobs/terraform-provider-hrobot/releases/download/v0.5.0/hrobot-linux-arm64.tar.gz"
+      sha256 "3afe7e06f38538a6cf2b98ac895a849e3d42a77241b0ce17f6faaa253754e04d"
     else
-      url "https://github.com/midwork-finds-jobs/terraform-provider-hrobot/releases/download/v0.3.1/hrobot-linux-amd64.tar.gz"
-      sha256 "2740dec91435bbe51bff66452e26837e4d2688b107d5c442d5ea646e192919e5"
+      url "https://github.com/midwork-finds-jobs/terraform-provider-hrobot/releases/download/v0.5.0/hrobot-linux-amd64.tar.gz"
+      sha256 "a9cbaa692ae3b6f12a870af508db9f974590a1a1b30f16204156136936dd6680"
     end
   end
 
